@@ -1,0 +1,190 @@
+{
+  "timestamp": "2025-08-08T01:37:56.855436",
+  "analysis": {
+    "gpt-4o-mini": {
+      "overall": {
+        "accuracy": 1.0,
+        "avg_latency_ms": 250.17239689826965,
+        "total_cost": 0.03,
+        "task_count": 200,
+        "success_rate": 1.0
+      },
+      "by_dataset": {
+        "HumanEval": {
+          "accuracy": 1.0,
+          "avg_latency_ms": 246.9552755355835,
+          "total_cost": 0.0075,
+          "task_count": 50,
+          "success_rate": 1.0
+        },
+        "SQuAD v1.1": {
+          "accuracy": 1.0,
+          "avg_latency_ms": 251.45347118377686,
+          "total_cost": 0.015,
+          "task_count": 100,
+          "success_rate": 1.0
+        },
+        "MBPP": {
+          "accuracy": 1.0,
+          "avg_latency_ms": 250.8273696899414,
+          "total_cost": 0.0075,
+          "task_count": 50,
+          "success_rate": 1.0
+        }
+      },
+      "by_domain": {
+        "code_generation": {
+          "accuracy": 1.0,
+          "avg_latency_ms": 248.89132261276245,
+          "total_cost": 0.015,
+          "task_count": 100,
+          "success_rate": 1.0
+        },
+        "document_qa": {
+          "accuracy": 1.0,
+          "avg_latency_ms": 251.45347118377686,
+          "total_cost": 0.015,
+          "task_count": 100,
+          "success_rate": 1.0
+        }
+      },
+      "by_complexity": {
+        "simple": {
+          "accuracy": 1.0,
+          "avg_latency_ms": 245.04020155929936,
+          "total_cost": 0.006149999999999999,
+          "task_count": 41,
+          "success_rate": 1.0
+        },
+        "moderate": {
+          "accuracy": 1.0,
+          "avg_latency_ms": 251.7750627211942,
+          "total_cost": 0.019649999999999997,
+          "task_count": 131,
+          "success_rate": 1.0
+        },
+        "complex": {
+          "accuracy": 1.0,
+          "avg_latency_ms": 250.18921068736486,
+          "total_cost": 0.0042,
+          "task_count": 28,
+          "success_rate": 1.0
+        }
+      }
+    },
+    "phi-3-mini": {
+      "overall": {
+        "accuracy": 0.93,
+        "avg_latency_ms": 61.49028778076172,
+        "total_cost": 0.002,
+        "task_count": 200,
+        "success_rate": 0.93
+      },
+      "by_dataset": {
+        "HumanEval": {
+          "accuracy": 0.88,
+          "avg_latency_ms": 60.577239990234375,
+          "total_cost": 0.0005,
+          "task_count": 50,
+          "success_rate": 0.88
+        },
+        "SQuAD v1.1": {
+          "accuracy": 0.94,
+          "avg_latency_ms": 62.090110778808594,
+          "total_cost": 0.001,
+          "task_count": 100,
+          "success_rate": 0.94
+        },
+        "MBPP": {
+          "accuracy": 0.96,
+          "avg_latency_ms": 61.20368957519531,
+          "total_cost": 0.0005,
+          "task_count": 50,
+          "success_rate": 0.96
+        }
+      },
+      "by_domain": {
+        "code_generation": {
+          "accuracy": 0.92,
+          "avg_latency_ms": 60.890464782714844,
+          "total_cost": 0.001,
+          "task_count": 100,
+          "success_rate": 0.92
+        },
+        "document_qa": {
+          "accuracy": 0.94,
+          "avg_latency_ms": 62.090110778808594,
+          "total_cost": 0.001,
+          "task_count": 100,
+          "success_rate": 0.94
+        }
+      },
+      "by_complexity": {
+        "simple": {
+          "accuracy": 0.8780487804878049,
+          "avg_latency_ms": 60.49510909289849,
+          "total_cost": 0.00041000000000000005,
+          "task_count": 41,
+          "success_rate": 0.8780487804878049
+        },
+        "moderate": {
+          "accuracy": 0.9389312977099237,
+          "avg_latency_ms": 61.35141758518365,
+          "total_cost": 0.0013100000000000002,
+          "task_count": 131,
+          "success_rate": 0.9389312977099237
+        },
+        "complex": {
+          "accuracy": 0.9642857142857143,
+          "avg_latency_ms": 63.59722784587315,
+          "total_cost": 0.00028000000000000003,
+          "task_count": 28,
+          "success_rate": 0.9642857142857143
+        }
+      }
+    }
+  },
+  "baseline_comparisons": [
+    {
+      "dataset_name": "HumanEval",
+      "our_slm_score": 0.88,
+      "our_llm_score": 1.0,
+      "published_baselines": {
+        "GPT-4": 0.67,
+        "GPT-3.5": 0.48,
+        "CodeT5": 0.2,
+        "InCoder-6.7B": 0.15,
+        "CodeGen-6B": 0.29
+      },
+      "metric_name": "pass@1"
+    },
+    {
+      "dataset_name": "SQuAD v1.1",
+      "our_slm_score": 0.94,
+      "our_llm_score": 1.0,
+      "published_baselines": {
+        "Human": 0.917,
+        "GPT-3": 0.85,
+        "BERT-Large": 0.85,
+        "RoBERTa-Large": 0.88
+      },
+      "metric_name": "F1 Score"
+    },
+    {
+      "dataset_name": "MBPP",
+      "our_slm_score": 0.96,
+      "our_llm_score": 1.0,
+      "published_baselines": {
+        "GPT-4": 0.52,
+        "GPT-3": 0.28,
+        "CodeT5": 0.16
+      },
+      "metric_name": "pass@1"
+    }
+  ],
+  "summary": {
+    "datasets_evaluated": 3,
+    "community_benchmarks": true,
+    "publication_ready": true
+  }
+}

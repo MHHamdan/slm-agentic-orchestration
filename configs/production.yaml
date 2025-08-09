@@ -1,0 +1,15 @@
+orchestration:
+  max_concurrent_tasks: 100
+  enable_caching: true
+  cache_ttl: 3600
+
+models:
+  slm:
+    - name: phi-3-mini
+      provider: huggingface
+    - name: gemma-2b
+      provider: huggingface
+  
+api:
+  port: 8080
+  rate_limit: 100/minute

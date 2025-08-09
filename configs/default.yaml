@@ -1,0 +1,71 @@
+# Default configuration for SLM Agentic Orchestration
+# Priority P0 - Minimum Viable Config for Week 1
+
+project:
+  name: "slm-agentic-orchestration"
+  version: "0.1.0"
+  
+models:
+  # Priority SLMs for Phase 1
+  slms:
+    - name: "phi-3-mini"
+      size: "3.8B"
+      provider: "microsoft"
+      cost_per_1k: 0.0001  # Estimated
+      
+    - name: "llama-3.2-3b"
+      size: "3B"
+      provider: "meta"
+      cost_per_1k: 0.0001
+      
+    - name: "gemma-2-2b"
+      size: "2B"
+      provider: "google"
+      cost_per_1k: 0.00008
+  
+  # LLMs via API only (Phase 1 simplification)
+  llms:
+    - name: "gpt-4o-mini"
+      provider: "openai"
+      cost_per_1k: 0.15
+      
+    - name: "claude-3-haiku"
+      provider: "anthropic"
+      cost_per_1k: 0.25
+      
+    - name: "gemini-1.5-flash"
+      provider: "google"
+      cost_per_1k: 0.075
+
+routing:
+  # Simple routing thresholds for Phase 1
+  complexity_threshold_slm: 0.3  # Below this -> SLM
+  complexity_threshold_llm: 0.7  # Above this -> LLM
+  default_model: "phi-3-mini"
+  fallback_model: "gpt-4o-mini"
+  
+evaluation:
+  # Phase 1: Focus on 3 domains
+  domains:
+    - name: "structured_data"
+      description: "JSON/CSV transformations"
+      examples_count: 300
+      
+    - name: "code_generation"
+      description: "Simple function completion"
+      examples_count: 300
+      
+    - name: "document_qa"
+      description: "Fact extraction from documents"
+      examples_count: 300
+      
+  metrics:
+    - "accuracy"
+    - "latency_ms"
+    - "cost_per_request"
+    - "success_rate"
+    
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/slm_orchestration.log"

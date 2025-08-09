@@ -1,0 +1,16 @@
+{
+  "name": "MBPP",
+  "domain": "code_generation",
+  "description": "Mostly Basic Python Problems - crowd-sourced Python programming problems",
+  "paper_reference": "Austin et al. (2021) - Program Synthesis with Large Language Models",
+  "huggingface_name": "mbpp",
+  "download_date": "2025-08-08T01:29:05.622111",
+  "total_examples": 974,
+  "sample_size": 10,
+  "splits": [
+    "train",
+    "test",
+    "validation",
+    "prompt"
+  ]
+}

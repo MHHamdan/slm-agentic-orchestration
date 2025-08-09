@@ -1,0 +1,14 @@
+{
+  "name": "SQuAD 1.1",
+  "domain": "document_qa",
+  "description": "Stanford Question Answering Dataset - reading comprehension",
+  "paper_reference": "Rajpurkar et al. (2016) - SQuAD: 100,000+ Questions for Machine Reading Comprehension",
+  "huggingface_name": "squad",
+  "download_date": "2025-08-08T01:29:11.172591",
+  "total_examples": 107785,
+  "sample_size": 1000,
+  "splits": [
+    "train",
+    "validation"
+  ]
+}

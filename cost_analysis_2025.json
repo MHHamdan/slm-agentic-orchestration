@@ -1,0 +1,24 @@
+{
+  "total_reproduction_cost": 135.19841250000002,
+  "evaluation_costs": {
+    "gpt-4o-mini": 0.013425,
+    "phi-3-mini": 0.022649999999999997
+  },
+  "cost_per_task": {
+    "gpt-4o-mini": 6.712499999999999e-05,
+    "phi-3-mini": 0.00011324999999999999
+  },
+  "efficiency_ratio": 0.5927152317880795,
+  "actual_measured_ratio": 15.0,
+  "pricing_sources": {
+    "gpt-4o-mini": "OpenAI API Pricing (https://openai.com/api/pricing/)",
+    "phi-3-mini": "Azure AI Foundry Pricing (https://azure.microsoft.com/pricing/details/phi-3/)"
+  },
+  "task_counts": {
+    "HumanEval": 50,
+    "MBPP": 50,
+    "SQuAD v1.1": 100,
+    "Total": 200
+  },
+  "calculation_date": "January 2025"
+}

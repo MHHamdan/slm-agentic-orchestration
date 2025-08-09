@@ -1,0 +1,162 @@
+# IMPORTANT: Research paper - DO NOT PUSH TO GITHUB
+iclr2026_paper/
+ICLR2026_*
+ICLR_*
+*_SUBMISSION_*
+*.tex
+*.bib
+*.bst
+*.sty
+*.pdf
+
+# Environment variables and secrets
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*
+
+# Secret files and folders
+secrets/
+.secrets/
+config/secrets/
+configs/secrets/
+tokens/
+.tokens/
+keys/
+.keys/
+credentials/
+.credentials/
+*_secret*
+*_private*
+*.pem
+*.key
+*.cert
+*.crt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+.dockerignore
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Kubernetes secrets
+*secret*.yaml
+*secret*.yml
+!*secret*.example.yaml
+!*secret*.example.yml
+
+# AI/ML specific
+models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+checkpoints/
+wandb/
+mlruns/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# API keys and tokens (specific patterns)
+*.api_key
+*.token
+*_secret.txt
+*_secret.key
+*_password.txt
+*_password.key
+api_keys/*
+!api_keys/*.example
+!*example*
+!*template*
+!*sample*
+
+# Configuration overrides
+local_config.yaml
+local_config.yml
+override.yaml
+override.yml

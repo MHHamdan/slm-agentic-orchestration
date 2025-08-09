@@ -1,0 +1,13 @@
+{
+  "name": "HumanEval",
+  "domain": "code_generation",
+  "description": "Hand-written programming problems for code generation evaluation",
+  "paper_reference": "Chen et al. (2021) - Evaluating Large Language Models Trained on Code",
+  "huggingface_name": "openai_humaneval",
+  "download_date": "2025-08-08T01:28:56.076778",
+  "total_examples": 164,
+  "sample_size": 164,
+  "splits": [
+    "test"
+  ]
+}
