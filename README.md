@@ -48,7 +48,7 @@ Statistical significance was confirmed through rigorous hypothesis testing (p < 
 
 ```bash
 # Clone the repository
-git clone https://github.com/MHHamdan/slm-agentic-orchestration.git
+git clone https://github.com/[anonymous]/slm-agentic-orchestration.git
 cd slm-agentic-orchestration
 
 # Create virtual environment
@@ -197,10 +197,10 @@ Ongoing research directions include:
 If you use this work in your research, please cite:
 
 ```bibtex
-@article{hamdan2025slm,
+@article{anonymous2025slm,
   title={Adaptive Orchestration of Small Language Models for Agentic AI Systems},
-  author={Hamdan, Mohammed et al.},
-  journal={arXiv preprint},
+  author={Anonymous},
+  journal={Under Review},
   year={2025}
 }
 ```
@@ -211,8 +211,8 @@ This project is released under the MIT License. See [LICENSE](LICENSE) file for 
 
 ## Contact
 
-For questions or collaboration opportunities, please contact the research team at: mhhamdan@research.org
+For questions about this implementation, please open an issue in this repository.
 
 ## Acknowledgments
 
-We thank the open-source community for valuable feedback and contributions during the development of this framework.
+We thank the research community for valuable feedback during the development of this framework.
